@@ -1,0 +1,107 @@
+
+/* Font Family */
+
+.quicksand-regular {
+  font-family: "Quicksand";
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* shared styles */
+.bg-image{
+    background-image:url(../assets/bg.png);
+    width: 1440px;
+}
+.btn-primary{
+    background-color: #FEA301;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+.home{
+    color: #FEA301;
+}
+.about{
+    color: #01ACFD;
+}
+.facilities{
+    color: skyblue;
+}
+.admission{
+    color: #5D58EF;
+}
+
+/* navigation related styles */
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-image{
+    width: 62px;
+    height: 62px;
+}
+.logo-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+}
+.school{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-options{
+    display: flex;
+    list-style: none;
+    margin-left: 40%;
+}
+.nav-options a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav, .banner{
+    max-width: 100%;
+    margin: 0 130px;
+}
+
+/* banner related styles */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ban-img{
+    background-image: url(../assets/bg.png);
+    width: 300px;
+}
+.ban-button{
+    font-size: 20px;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* main related styles */
+.headline{
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+section{
+    background-image: url(../assets/bg.png);
+    width: 100%;
+}
