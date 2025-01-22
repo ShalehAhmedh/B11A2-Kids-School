@@ -36,6 +36,12 @@
 }
 
 /* navigation related styles */
+header{
+    padding: 0px 30px;
+}
+/* main{
+    margin: 0px 50px;
+} */
 .logo{
     display: flex;
     align-items: center;
@@ -68,10 +74,14 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px 20px;
+}
+.menu-bar{
+    width: 30px;
+    height: 30px;
 }
 nav, .banner{
     max-width: 100%;
-    margin: 0 130px;
 }
 
 /* banner related styles */
@@ -80,10 +90,10 @@ nav, .banner{
     align-items: center;
     justify-content: space-between;
 }
-.bg-img{
+/* .bg-img{
     background-image: url(../assets/bg.png);
     width: 300px;
-}
+} */
 .ban-button{
     font-size: 20px;
     font-weight: 800;
@@ -95,11 +105,17 @@ nav, .banner{
 }
 
 /* main related styles */
+/* body{
+    background-image: url(../assets/bg.png);
+} */
 .headline{
     font-size: 35px;
     font-weight: 700;
     display: flex;
     justify-content: center;
+}
+.banner{
+    margin: 0px 10%;
 }
 .headline2{
     font-size: 35px;
@@ -125,6 +141,7 @@ section{
     height: 360px;
     padding: 50px 40px;
     border: 1px solid rgba(222, 245, 255, 1.00);
+    border-radius: 18px;
     box-shadow: rgba(222, 245, 255, 1.00);
     background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1.00), white);
 }
@@ -133,6 +150,7 @@ section{
     height: 360px;
     padding: 50px 40px;
     border: 1px solid rgba(255, 244, 220, 1.00);
+    border-radius: 18px;
     background-image: linear-gradient(to bottom, rgba(255, 244, 220, 1.00), white);
 }
 .card3{
@@ -140,6 +158,7 @@ section{
     height: 360px;
     padding: 50px 40px;
     border: 1px solid rgba(242, 232, 255, 1.00);
+    border-radius: 18px;
     background-image: linear-gradient(to bottom, rgba(242, 232, 255, 1.00), white);
 }
 .card-container{
@@ -149,9 +168,6 @@ section{
 .cards-footer{
     background-image: linear-gradient(to top, rgba(254, 163, 1, 1.00), white);
 }
-/* .second-cards{
-    background-image: linear-gradient(to top, rgba(254, 163, 1, 1.00), white);
-} */
 .card-flex{
     width: 100%;
     height: 100%;
@@ -160,9 +176,18 @@ section{
 .card2-1{
     background-color: white;
     width: 540px;
+    min-height: 100%;
     border-radius: 18px;
     gap: 0px;
-    height: 100%;
+}
+.marquee{
+    font-size: 24px;
+    font-weight: 800;
+    height: 35px;
+    width: 100%;
+    color: white;
+    background-color: #FEA301;
+    text-align: center;
 }
 .card2-2{
     gap: 0px;
@@ -186,15 +211,39 @@ section{
     gap: 20px;
     height: 100%
 }
-.date{
+.date1{
     font-size: 15px;
     color: white;
-    background-color: black;
+    background-color: #3CD8E8;
     padding: 10px 20px;
     border-radius: 50px;
     margin-left: 10%;
     position: relative;
     bottom: 12px;
+}
+.date2{
+    font-size: 15px;
+    color: white;
+    background-color: #95B226;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 10%;
+    position: relative;
+    bottom: 12px;
+}
+.date3{
+    font-size: 15px;
+    color: white;
+    background-color: #5D58F0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 10%;
+    position: relative;
+    bottom: 12px;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
 }
 .time{
     display: flex;
@@ -232,15 +281,119 @@ a{
     text-decoration: none;
     color: white;
 }
+.menu-bar{
+    display: none;
+}
+.read-more1{
+    color: #64C8FF;
+}
+.read-more2{
+    color: #F0AA00;
+}
+.read-more3{
+    color: #8700FF;
+}
 
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px){
-    nav, .banner{
+    .menu-bar{
+        display:initial;
+    }
+    nav{
         max-width: 100%;
-        margin: 0 10%;
+        width: 100%;
+    }
+    nav{
+        border: 1px solid #FEA301;
+        padding: 10px 5px;
+        margin-top: 0px;
     }
     .banner{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .school, .nav-options, .btn-primary{
+        display: none;
+    }
+    .ban-img{
+        width: 100%;
+    }
+    .logo-image{
+        width: 46px;
+        height: 46px;
+    }
+    .banner-content{
+        display: grid;
+        grid-template-columns:auto;
+
+    }
+    .column-center{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .headline{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .card1{
+        width: 85%;
+    }
+    .card2{
+        width: 85%;
+    }
+    .card3{
+        width: 85%;
+    }
+    .card-container{
+        flex-direction: column;
+        margin: 0px 5px;
+    }
+    .card-flex{
+        width: 100%;
+        margin: 0px;
+    }
+    .four-cards, .card-flex{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .second-card-part{
+        width: 100%;
+    }
+    footer{
+        background-color: #01ACFD;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .card-img{
+        width: 100%;
+    }
+    .card2-2{
+        width: 70%;
+        margin: 20px 20px;
+    }
+    .card2-2{
+        width: 70%;
+        margin: 20px 0px;
+    }
+    .hidden-p{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 576px) and (max-width: 992px){
+    nav{
+        max-width: 100%;
+        width: 100%;
+    }
+    nav{
+        border: 1px solid #FEA301;
+        padding: 10px 5px;
+        margin-top: 0px;
+    }
+    .banner{
+        margin-top: 30px;
         flex-direction: column-reverse;
     }
     .school, .nav-options, .btn-primary{
@@ -282,9 +435,13 @@ a{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    .second-card-part{
+        width: 100%;
+    }
     footer{
         background-color: #01ACFD;
         flex-direction: column;
+        gap: 5px;
     }
     .card-img{
         width: 100%;
